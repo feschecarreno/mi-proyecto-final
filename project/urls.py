@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ejemplo.views import index
+from ejemplo.views import index, index_dos, index_tres
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludar/', index),
+    path('saludar/<nombre>/<apellido>/', index_dos),
+    path('mostrar-notas/', index_tres),
 ]
 
