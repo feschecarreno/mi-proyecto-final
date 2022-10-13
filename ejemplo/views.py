@@ -12,12 +12,9 @@ def index_tres(request):
     { "notas":[1,2,3,4,5,6,7]})
 
 def imc (request, peso, altura):
-    imc = float(peso / (altura**2))
-    return render (request, "ejemplo/imc.html",
+    imc = peso / ((altura/100)**2)
+    return render (request, "ejemplo/saludar.html",
     {"peso": peso,
     "altura": altura,
     "imc": imc,
-
-    }
-    
-    )
+    })
