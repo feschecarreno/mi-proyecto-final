@@ -2,7 +2,6 @@ from django.shortcuts import render
 from ejemplo.models import Familiar
 from ejemplo.forms import Buscar, FamiliarForm
 from django.views import View
-
 def index(request):
     return render(request, "ejemplo/saludar.html",{"nombre": "Federico", "apellido": "Carreño"})#paso un diccionario
 

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ejemplo.apps.EjemploConfig',
     'blog.apps.BlogConfig',
+    'panel_familia.apps.PanelFamiliaConfig',
     
 ]
 
